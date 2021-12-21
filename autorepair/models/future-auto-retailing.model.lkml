@@ -1,7 +1,7 @@
 connection: "bigquery_public_data_looker"
 
 # include all the views
-include: "/views/**/*.view"
+include: "/autorepair/views/**/*.view"
 
 datagroup: future_auto_retailing_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
