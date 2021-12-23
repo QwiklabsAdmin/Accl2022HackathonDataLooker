@@ -7,10 +7,9 @@ view: autotelemetry {
     sql: ${TABLE}.tripID ;;
   }
 
-  dimension: vin {
-    primary_key: yes
-    type: string
-    sql: ${TABLE}.vin ;;
+  dimension: device_id {
+    type:  number
+    sql:  ${TABLE}.deviceId ;;
   }
 
   dimension_group: timestamp {
